@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Counter Component
+const CounterApp = () => {
+  
+  const counterComponent = 
+  <div className="counter-container">
+      <h2 id="counter">0</h2>
+      <div id="buttons">
+          <button id="add" type="button">Add</button>
+          <button id="less" type="button">Less</button>
+          <button id="restart" type="button">Restart</button>
+      </div>
+  </div>
+  ;
 
-export default App;
+  return counterComponent;
+
+};
+
+export default CounterApp;
